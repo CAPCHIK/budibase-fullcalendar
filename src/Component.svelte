@@ -31,6 +31,10 @@
   export let allday
   export let allday2
   
+  export let headerOptionsLeft
+  export let headerOptionsCenter
+  export let headerOptionsRight
+
   let eventsList = []
   onMount(()=>{
     
@@ -54,9 +58,9 @@
 
   let options  = {
     headerToolbar: {
-      left: 'prev,next today',
-      center: 'title',
-      right: 'dayGridMonth,dayGridWeek,dayGridDay,timeGridWeek,timeGridDay'
+      left: headerOptionsLeft,
+      center: headerOptionsCenter,
+      right: headerOptionsRight
     },
     plugins: [daygridPlugin, listPlugin, timeGridPlugin],
     initialDate:  Date.now(),
