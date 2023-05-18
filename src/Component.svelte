@@ -4,6 +4,7 @@
   import '@fullcalendar/core/locales-all'
   import FullCalendar from 'svelte-fullcalendar';
   import daygridPlugin from '@fullcalendar/daygrid';
+  import timeGridPlugin from '@fullcalendar/timegrid';
   import listPlugin from '@fullcalendar/list';
   import { onMount } from "svelte";
   import {langs, codeLang} from "./lang"
@@ -13,9 +14,13 @@
   
   export let mappingTitle
   export let mappingDate
+  export let mappingStart
+  export let mappingEnd
  
   export let mappingTitle2
   export let mappingDate2
+  export let mappingStart2
+  export let mappingEnd2
 
   export let dataProvider
   export let dataProvider2
@@ -51,9 +56,9 @@
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
-      right: 'dayGridMonth,dayGridWeek,dayGridDay'
+      right: 'dayGridMonth,dayGridWeek,dayGridDay,timeGridWeek,timeGridDay'
     },
-    plugins: [daygridPlugin, listPlugin],
+    plugins: [daygridPlugin, listPlugin, timeGridPlugin],
     initialDate:  Date.now(),
     locale: language,
     dayMaxEvents: true,
