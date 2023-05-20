@@ -99,8 +99,8 @@
         "settings": [
           {
             "type": "text",
-            "label": "Left Options",
-            "key": "headerOptionsLeft",
+            "label": "Start Options",
+            "key": "headerOptionsStart",
             "defaultValue": "prev,next today"
           },
           {
@@ -111,8 +111,8 @@
           },
           {
             "type": "text",
-            "label": "Right Options",
-            "key": "headerOptionsRight",
+            "label": "End Options",
+            "key": "headerOptionsEnd",
             "defaultValue": "dayGridMonth,dayGridWeek,timeGridDay"
           }
         ]
