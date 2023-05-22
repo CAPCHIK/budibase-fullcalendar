@@ -2,6 +2,7 @@
 <img src="src/images/calendar.png" />
 
 
+
 ## Description
 It's a component to implement fullcalendar in your budibase.
 
